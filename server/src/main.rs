@@ -4,7 +4,7 @@ use pretty_env_logger;
 async fn main() {
     pretty_env_logger::init();
 
-    warp::serve(warp::fs::dir("../client/dist"))
-        .run(([127, 0, 0, 1], 3030))
+    warp::serve(warp::fs::dir("../client/build"))
+        .run(([192, 168, 1, 7], 3030))
         .await;
 }
