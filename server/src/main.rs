@@ -12,5 +12,6 @@ fn main() -> io::Result<()> {
 }
 
 fn index() -> impl Responder {
-    HttpResponse::Ok().body("Hello world!")
+    HttpResponse::Ok().body("Hello world!");
+    let mut extra = "uh";
 }
